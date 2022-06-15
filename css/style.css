@@ -5,7 +5,6 @@
 body {
   font-family: sans-serif;
   background: #371b58;
-  overflow-x: hidden;
 }
 
 /* navbar */
@@ -89,20 +88,22 @@ nav ul li a:hover {
     display: flex;
   }
   nav ul {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    height: 110vh;
+    height: 100vh;
     width: 50%;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: #7858a6;
     align-items: center;
-    transform: translateX(100%);
-    transition: all 0.5s;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
   }
   nav ul.slide {
-    transform: translateX(0);
+    z-index: 0;
+    opacity: 0.9;
   }
   .container1 {
     flex-direction: column;

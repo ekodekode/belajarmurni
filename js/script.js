@@ -1,6 +1,6 @@
 const menuHamb = document.querySelector('.menuhamb input');
-const nav = document.querySelector('.slide');
+const nav = document.querySelector('nav ul');
 
-menuHamb.addEventListener('clik', function () {
+menuHamb.addEventListener('click', function () {
   nav.classList.toggle('slide');
 });
